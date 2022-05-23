@@ -1,16 +1,37 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+details {
+  user-select: none;
+	max-height: 62px;
+}
+details summary svg {
+  transform: rotate(90deg);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+details[open] {
+  background: white;
+  color: black;
+	max-height: 100vh;
+}
+details[open] summary svg {
+  transform: rotate(-90deg);
 }
 
-* {
-  box-sizing: border-box;
+details[open] summary ~ * {
+  animation: ease-opacity-t-b 0.5s ease;
+}
+
+summary {
+  cursor: pointer;
+}
+
+svg {
+	transition: all 0.3s ease-in-out;
+}
+
+/* TO JE TO - TO JE TAJ */
+summary::-webkit-details-marker {
+  display: none;
 }
