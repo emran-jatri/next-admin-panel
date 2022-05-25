@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Dropdown from "../dropdowns/Dropdown";
 
 const Sidemenu = (props) => {
