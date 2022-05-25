@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  postition: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-}
+
 
 details {
   user-select: none;

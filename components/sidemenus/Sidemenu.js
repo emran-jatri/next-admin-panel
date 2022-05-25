@@ -7,7 +7,7 @@ const Sidemenu = (props) => {
       <div
         className={[
           "w-3/4 absolute top-0 bottom-0 bg-blue-500 shadow-lg text-white transition-all duration-500 ease-in-out overflow-x-hidden z-10",
-          open ? "ml-0" : "-ml-[75%]",
+          open ? "left-0" : "-left-full",
         ].join(" ")}
       >
         <div className={"p-4"}>
@@ -77,8 +77,8 @@ const Sidemenu = (props) => {
       </div>
       <div
         className={[
-          "w-1/4 absolute top-0 bottom-0 bg-black/50 shadow-lg transition-all duration-500 ease-in-out cursor-pointer overflow-x-hidden z-10",
-          open ? "ml-[75%]" : "ml-[100%]",
+          "absolute top-0 bottom-0 bg-black/50 shadow-lg transition-all duration-500 ease-in-out cursor-pointer overflow-x-hidden z-10",
+          open ? "left-3/4 w-1/4" : "left-full w-0",
         ].join(" ")}
         onClick={() => close(!open)}
       ></div>
