@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  postition: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 details {
   user-select: none;
-	max-height: 62px;
+  max-height: 62px;
 }
 details summary svg {
   transform: rotate(90deg);
@@ -13,7 +19,7 @@ details summary svg {
 details[open] {
   background: white;
   color: black;
-	max-height: 100vh;
+  max-height: 100vh;
 }
 details[open] summary svg {
   transform: rotate(-90deg);
@@ -28,7 +34,7 @@ summary {
 }
 
 svg {
-	transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* TO JE TO - TO JE TAJ */
