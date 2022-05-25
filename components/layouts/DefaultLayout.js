@@ -1,5 +1,5 @@
-import Header from "../headers/Header";
-import Sidebar from "../sidebars/Sidebar";
+import Header from "../headers/Header.js";
+import Sidebar from "../sidebars/Sidebar.js";
 
 const DefaultLayout = ({ children }) => {
   return (

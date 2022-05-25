@@ -1,4 +1,4 @@
-import DefaultLayout from "../components/layouts/DefaultLayout";
+import DefaultLayout from "../components/layouts/DefaultLayout.js";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {

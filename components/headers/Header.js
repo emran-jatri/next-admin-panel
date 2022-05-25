@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Sidemenu from "./../sidemenus/SideMenu";
+import Sidemenu from "../sidemenus/SideMenu.js";
 
 const Header = () => {
   const [sidebar, setSideBar] = useState(false);
