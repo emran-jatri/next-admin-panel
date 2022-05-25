@@ -1,26 +1,27 @@
 import { useState } from "react";
 import Sidemenu from "../sidemenus/Sidemenu.js";
+import  Link from 'next/link';
 
 const Header = () => {
   const [sidebar, setSideBar] = useState(false);
 
   return (
     <>
-      <div className={"bg-blue-500 p-4 flex justify-between items-center"}>
-        <div className={"text-white font-bold text-2xl ml-0 md:ml-20"}>
+      <div className={"bg-blue-500 flex justify-between items-center"}>
+        <div className={"p-4 text-white font-bold text-2xl ml-0 md:ml-20"}>
           Next.js
         </div>
         <div
           className={
-            "hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
+            "p-4 hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
           }
         >
-          <a href="#" className={"px-3 py-2"}>
-            Login
-          </a>
-          <a href="#" className={"px-3 py-2"}>
-            Signup
-          </a>
+          <Link href="/login" className={"px-3 py-2"}>
+            <a>Login</a>
+          </Link>
+          <Link href="/signup" className={"px-3 py-2"}>
+					<a>Signup</a>
+          </Link>
           <img
             src="https://images.generated.photos/vyaPXjHlqtBnCOz2zGuPFcbo4u9oGehWdZi9jBe1uhU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njk2NTgxLmpwZw.jpg"
             alt="profile"
@@ -28,7 +29,7 @@ const Header = () => {
           />
         </div>
         <div
-          className={"block md:hidden cursor-pointer"}
+          className={"p-4 block md:hidden cursor-pointer"}
           onClick={() => setSideBar(!sidebar)}
         >
           <svg
