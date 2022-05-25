@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Sidebar = (props) => {
   const router = useRouter();
-  console.log("--------------->", router);
   return (
     <div className="hidden md:block w-[300px] p-5">
       <img
