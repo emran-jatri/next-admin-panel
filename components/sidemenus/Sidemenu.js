@@ -1,4 +1,4 @@
-import Dropdown from "../dropdowns/Dropdown";
+import Dropdown from "./../dropdowns/Dropdown";
 
 const Sidemenu = (props) => {
   const { open, close } = props;
