@@ -15,12 +15,6 @@ const Header = () => {
             "hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
           }
         >
-          {/* <a href="#" className={"px-3 py-2"}>
-            Home
-          </a>
-          <a href="#" className={"px-3 py-2"}>
-            Services
-          </a> */}
           <a href="#" className={"px-3 py-2"}>
             Login
           </a>
