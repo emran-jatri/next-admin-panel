@@ -1,4 +1,5 @@
 import Dropdown from "../dropdowns/Dropdown.js";
+import Link from "next/link";
 
 const Sidemenu = (props) => {
   const { open, close } = props;
@@ -65,15 +66,30 @@ const Sidemenu = (props) => {
         {/* <div className="p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
           Home
         </div> */}
-        <div className="p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
-          Service
-        </div>
-        <div className="p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
-          About
-        </div>
-        <div className="p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
-          Contact
-        </div>
+        <Link href="/services">
+          <a
+            onClick={() => close(!open)}
+            className="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out"
+          >
+            Services
+          </a>
+        </Link>
+        <Link href="/about">
+          <a
+            onClick={() => close(!open)}
+            className="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out"
+          >
+            About
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a
+            onClick={() => close(!open)}
+            className="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out"
+          >
+            Contact
+          </a>
+        </Link>
       </div>
       <div
         className={[

@@ -1,5 +1,8 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import FacebookIcon from "../svgs/FacebookIcon.js";
+import TwitterIcon from "../svgs/TwitterIcon.js";
+import YouTubeIcon from "../svgs/YouTubeIcon.js";
 
 const Sidebar = (props) => {
   const router = useRouter();
@@ -12,12 +15,17 @@ const Sidebar = (props) => {
       />
       <p className="uppercase font-bold text-xl text-center mt-3 text-gray-800">
         Subbir Hossain
-      </p>
+			</p>
+			<div className="flex justify-center items-center space-x-4 mt-2">
+				<FacebookIcon  className="w-8 cursor-pointer hover:fill-blue-500"/>
+				<YouTubeIcon className="w-8 cursor-pointer hover:fill-red-700"/>
+				<TwitterIcon  className="w-8 cursor-pointer hover:fill-blue-400"/>
+			</div>
       <div className="mt-5 space-y-2">
         <Link href="/">
           <a
             className={[
-              "block p-4 hover:text-white rounded-xl",
+              "block p-4 hover:text-white rounded-xl transition-all duration-150 ease-in-out",
               router.pathname === "/"
                 ? "bg-blue-500 text-white"
                 : "hover:bg-blue-500",
@@ -29,7 +37,7 @@ const Sidebar = (props) => {
         <Link href="/services">
           <a
             className={[
-              "block p-4 hover:text-white rounded-xl",
+              "block p-4 hover:text-white rounded-xl transition-all duration-150 ease-in-out",
               router.pathname === "/services"
                 ? "bg-blue-500 text-white"
                 : "hover:bg-blue-500",
@@ -41,7 +49,7 @@ const Sidebar = (props) => {
         <Link href="/about">
           <a
             className={[
-              "block p-4 hover:text-white rounded-xl",
+              "block p-4 hover:text-white rounded-xl transition-all duration-150 ease-in-out",
               router.pathname === "/about"
                 ? "bg-blue-500 text-white"
                 : "hover:bg-blue-500",
@@ -53,7 +61,7 @@ const Sidebar = (props) => {
         <Link href="/contact">
           <a
             className={[
-              "block p-4 hover:text-white rounded-xl",
+              "block p-4 hover:text-white rounded-xl transition-all duration-150 ease-in-out",
               router.pathname === "/contact"
                 ? "bg-blue-500 text-white"
                 : "hover:bg-blue-500",
