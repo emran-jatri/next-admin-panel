@@ -3,7 +3,7 @@ import Dropdown from "../dropdowns/Dropdown.js";
 const Sidemenu = (props) => {
   const { open, close } = props;
   return (
-    <div className="block md:hidden">
+    <div className="block lg:hidden">
       <div
         className={[
           "w-3/4 h-screen absolute top-0 bottom-0 bg-blue-500 shadow-lg text-white transition-all duration-500 ease-in-out overflow-x-hidden z-10",

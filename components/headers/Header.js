@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div
           className={
-            "p-4 hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
+            "p-4 hidden lg:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
           }
         >
           <Link href="/login" >
@@ -33,7 +33,7 @@ const Header = () => {
 					</div>
         </div>
         <div
-          className={"p-4 block md:hidden cursor-pointer"}
+          className={"p-4 block lg:hidden cursor-pointer"}
           onClick={() => setSideBar(!sidebar)}
         >
           <svg

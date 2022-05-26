@@ -4,7 +4,7 @@ import Link from "next/link";
 const Sidebar = (props) => {
   const router = useRouter();
   return (
-    <div className="hidden md:block w-[300px] p-5">
+    <div className="hidden lg:block w-[300px] p-5">
       <img
         src="https://images.generated.photos/vyaPXjHlqtBnCOz2zGuPFcbo4u9oGehWdZi9jBe1uhU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njk2NTgxLmpwZw.jpg"
         alt="profile"
