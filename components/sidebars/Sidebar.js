@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import FacebookIcon from "../svgs/FacebookIcon.js";
 import TwitterIcon from "../svgs/TwitterIcon.js";
 import YouTubeIcon from "../svgs/YouTubeIcon.js";
+import GithubIcon from '../svgs/GithubIcon.js';
 
 const Sidebar = (props) => {
   const router = useRouter();
@@ -17,9 +18,10 @@ const Sidebar = (props) => {
         Subbir Hossain
 			</p>
 			<div className="flex justify-center items-center space-x-4 mt-2">
-				<FacebookIcon  className="w-8 cursor-pointer hover:fill-blue-500"/>
-				<YouTubeIcon className="w-8 cursor-pointer hover:fill-red-700"/>
-				<TwitterIcon  className="w-8 cursor-pointer hover:fill-blue-400"/>
+				<FacebookIcon  className="w-8 cursor-pointer hover:fill-[#4267B2]"/>
+				<YouTubeIcon className="w-10 cursor-pointer hover:fill-[#ff0000]"/>
+				<TwitterIcon  className="w-8 cursor-pointer hover:fill-[#00acee]"/>
+				<GithubIcon className="w-8 cursor-pointer hover:fill-white hover:stroke-black"/>
 			</div>
       <div className="mt-5 space-y-2">
         <Link href="/">
